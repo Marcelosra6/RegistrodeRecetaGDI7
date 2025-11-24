@@ -1,7 +1,7 @@
 package vista;
 
 import modelo.Oftalmologo;
-
+import dao.Validaciones;
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.border.EmptyBorder;
@@ -96,11 +96,17 @@ public class OftalmologoFormDialog extends JDialog {
     }
 
     private void onGuardar() {
-        String dni = txtDni.getText().trim();
+        String dni = Validaciones.convertirYValidarDni(txtDni.getText());
         String nombre = txtNombre.getText().trim();
         String apePat = txtApellidoPaterno.getText().trim();
         String apeMat = txtApellidoMaterno.getText().trim();
-
+        if (dni == null) {
+            JOptionPane.showMessageDialog(this,
+                    "El DNI es inválido.\nDebe ser un número positivo de máximo 8 dígitos (sin letras).",
+                    "Error en DNI",
+                    JOptionPane.WARNING_MESSAGE);
+            return; // Detenemos el guardado
+        }
         if (dni.isEmpty() || nombre.isEmpty() || apePat.isEmpty() || apeMat.isEmpty()) {
             JOptionPane.showMessageDialog(this,
                     "Todos los campos son obligatorios.",
@@ -108,7 +114,6 @@ public class OftalmologoFormDialog extends JDialog {
                     JOptionPane.WARNING_MESSAGE);
             return;
         }
-
         if (dni.length() != 8) {
             JOptionPane.showMessageDialog(this,
                     "El DNI debe tener 8 caracteres.",

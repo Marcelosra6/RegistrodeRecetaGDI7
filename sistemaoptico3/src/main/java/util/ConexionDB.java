@@ -14,7 +14,7 @@ import java.sql.SQLException;
 public class ConexionDB {
     
     // Configuración de conexión para PostgreSQL
-    private static final String URL = "jdbc:postgresql://localhost:5433/opticadb";
+    private static final String URL = "jdbc:postgresql://localhost:5432/opticadb";
     private static final String USUARIO = "postgres";
     private static final String PASSWORD = "root"; // ⚠️ Tu password de PostgreSQL
     

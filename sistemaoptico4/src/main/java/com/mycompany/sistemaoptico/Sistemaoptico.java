@@ -24,9 +24,9 @@ public class Sistemaoptico {
         // Establecer Look and Feel del sistema operativo
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-            System.out.println("✓ Interfaz gráfica configurada");
+            System.out.println("Interfaz gráfica configurada");
         } catch (Exception e) {
-            System.err.println("✗ No se pudo configurar la interfaz gráfica");
+            System.err.println("No se pudo configurar la interfaz gráfica");
             e.printStackTrace();
         }
         
@@ -37,13 +37,13 @@ public class Sistemaoptico {
                 try {
                     LoginFrame loginFrame = new LoginFrame();
                     loginFrame.setVisible(true);
-                    System.out.println("✓ Ventana de login mostrada\n");
+                    System.out.println("Ventana de login mostrada\n");
                     System.out.println("Credenciales por defecto:");
                     System.out.println("  Usuario: admin");
                     System.out.println("  Contraseña: admin123");
                     System.out.println("==============================================\n");
                 } catch (Exception e) {
-                    System.err.println("✗ Error al iniciar la ventana de login");
+                    System.err.println("Error al iniciar la ventana de login");
                     e.printStackTrace();
                 }
             }

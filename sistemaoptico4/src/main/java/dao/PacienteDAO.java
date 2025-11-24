@@ -26,7 +26,7 @@ public class PacienteDAO {
         try {
             conn = ConexionDB.getConexion();
             ps = conn.prepareStatement(sql); // ✅ CAMBIO: prepareStatement en lugar de prepareCall
-            ps.setString(1, paciente.getDni());
+            ps.setString(1, Validaciones.convertirYValidarDni(paciente.getDni()));
             ps.setString(2, paciente.getNombre());
             ps.setString(3, paciente.getApellidoPaterno());
             ps.setString(4, paciente.getApellidoMaterno());
@@ -164,7 +164,7 @@ public class PacienteDAO {
         try {
             conn = ConexionDB.getConexion();
             cs = conn.prepareCall(sql);
-            cs.setString(1, paciente.getDni());
+            cs.setString(1, Validaciones.convertirYValidarDni(paciente.getDni()));
             cs.setString(2, paciente.getNombre());
             cs.setString(3, paciente.getApellidoPaterno());
             cs.setString(4, paciente.getApellidoMaterno());
@@ -192,7 +192,7 @@ public class PacienteDAO {
         try {
             conn = ConexionDB.getConexion();
             cs = conn.prepareCall(sql);
-            cs.setString(1, dni);
+            cs.setString(1, Validaciones.convertirYValidarDni(dni));
 
             cs.execute();
             return true;

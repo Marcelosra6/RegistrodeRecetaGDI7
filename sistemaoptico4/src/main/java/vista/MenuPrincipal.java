@@ -178,8 +178,7 @@ public class MenuPrincipal extends JFrame {
         gbc.gridx = 1;
         panel.add(crearTarjetaModerna("Reportes", "Ver estadisticas", "E", COLOR_INFO), gbc);
         
-        gbc.gridx = 2;
-        panel.add(crearTarjetaModerna("Configuracion", "Opciones del sistema", "C", COLOR_GRIS), gbc);
+  
         
         return panel;
     }
@@ -325,9 +324,7 @@ public class MenuPrincipal extends JFrame {
             case "Reportes":
                 abrirReportes();
                 break;
-            case "Configuracion":
-                abrirConfiguracion();
-                break;
+
             default:
                 JOptionPane.showMessageDialog(this,
                     "Modulo: " + titulo + "\n(En desarrollo)",
@@ -358,11 +355,6 @@ public class MenuPrincipal extends JFrame {
     
     private void abrirReportes() {
         ReportesFrame frame = new ReportesFrame(this, "General");
-        frame.setVisible(true);
-    }
-    
-    private void abrirConfiguracion() {
-        ConfiguracionFrame frame = new ConfiguracionFrame(this, usuarioActual, "General");
         frame.setVisible(true);
     }
     

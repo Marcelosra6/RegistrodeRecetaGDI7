@@ -209,9 +209,9 @@ public class GestionOftalmologosFrame extends JDialog {
         try {
             List<Oftalmologo> lista = oftDAO.listarTodos();
             llenarTabla(lista);
-            System.out.println("✅ Cargados " + lista.size() + " oftalmólogos");
+            System.out.println("Cargados " + lista.size() + " oftalmólogos");
         } catch (Exception e) {
-            System.err.println("❌ Error al cargar oftalmólogos: " + e.getMessage());
+            System.err.println("Error al cargar oftalmólogos: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -226,7 +226,7 @@ public class GestionOftalmologosFrame extends JDialog {
             List<Oftalmologo> lista = oftDAO.buscar(filtro);
             llenarTabla(lista);
         } catch (Exception e) {
-            System.err.println("❌ Error al buscar: " + e.getMessage());
+            System.err.println("Error al buscar: " + e.getMessage());
             e.printStackTrace();
         }
     }

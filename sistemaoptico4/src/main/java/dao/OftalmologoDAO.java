@@ -3,7 +3,6 @@ package dao;
 
 import modelo.Oftalmologo;
 import util.ConexionDB;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,6 @@ import java.util.List;
  * Actualizado para usar procedimientos almacenados y funciones de PostgreSQL
  */
 public class OftalmologoDAO {
-
     /**
      * Inserta un nuevo oftalmólogo usando el procedimiento almacenado
      */
@@ -26,11 +24,10 @@ public class OftalmologoDAO {
         try {
             conn = ConexionDB.getConexion();
             cs = conn.prepareCall(sql);
-            cs.setString(1, oft.getDni());
-            cs.setString(2, oft.getNombre());
-            cs.setString(3, oft.getApellidoPaterno());
+            cs.setString(1, Validaciones.convertirYValidarDni(oft.getDni()));
+            cs.setString(2, oft.getNombre());           
+            cs.setString(3, oft.getApellidoPaterno());  
             cs.setString(4, oft.getApellidoMaterno());
-
             cs.execute();
             return true;
 
@@ -56,10 +53,10 @@ public class OftalmologoDAO {
         try {
             conn = ConexionDB.getConexion();
             ps = conn.prepareStatement(sql);
-            ps.setString(1, dni);
+            ps.setString(1, Validaciones.convertirYValidarDni(dni));
             rs = ps.executeQuery();
 
-            if (rs.next()) {
+              if (rs.next()) {
                 oft = new Oftalmologo();
                 oft.setDni(rs.getString("dni").trim());
                 oft.setNombre(rs.getString("nombre"));
@@ -157,7 +154,7 @@ public class OftalmologoDAO {
         try {
             conn = ConexionDB.getConexion();
             cs = conn.prepareCall(sql);
-            cs.setString(1, oft.getDni());
+            cs.setString(1, Validaciones.convertirYValidarDni(oft.getDni()));
             cs.setString(2, oft.getNombre());
             cs.setString(3, oft.getApellidoPaterno());
             cs.setString(4, oft.getApellidoMaterno());
@@ -186,7 +183,7 @@ public class OftalmologoDAO {
         try {
             conn = ConexionDB.getConexion();
             cs = conn.prepareCall(sql);
-            cs.setString(1, dni);
+            cs.setString(1, Validaciones.convertirYValidarDni(dni));
 
             cs.execute();
             return true;

@@ -1,24 +1,25 @@
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\modelo\DetalleReceta.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\OftalmologoFormDialog.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\modelo\Paciente.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\modelo\Receta.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\modelo\Enfermedad.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\MenuPrincipal.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\modelo\Usuario.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\GestionRecetasFrame.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\dao\PacienteDAO.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\dao\RecetaDAO.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\GestionPacientesFrame.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\LoginFrame.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\VerRecetaDialog.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\com\mycompany\sistemaoptico\Sistemaoptico.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\modelo\Oftalmologo.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\dao\UsuarioDAO.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\ReportesFrame.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\dao\OftalmologoDAO.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\ConfiguracionFrame.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\util\ConexionDB.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\BuscarRecetasFrame.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\GestionOftalmologosFrame.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\NuevaRecetaDialog.java
-C:\Users\Asus\Documents\NetBeansProjects\sistemaoptico3\src\main\java\vista\PacienteFormDialog.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\com\mycompany\sistemaoptico\Sistemaoptico.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\dao\OftalmologoDAO.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\dao\PacienteDAO.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\dao\RecetaDAO.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\dao\UsuarioDAO.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\dao\Validaciones.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\modelo\DetalleReceta.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\modelo\Enfermedad.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\modelo\Oftalmologo.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\modelo\Paciente.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\modelo\Receta.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\modelo\Usuario.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\util\ConexionDB.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\BuscarRecetasFrame.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\ConfiguracionFrame.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\GestionOftalmologosFrame.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\GestionPacientesFrame.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\GestionRecetasFrame.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\LoginFrame.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\MenuPrincipal.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\NuevaRecetaDialog.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\OftalmologoFormDialog.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\PacienteFormDialog.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\ReportesFrame.java
+D:\EstudiosMarcelo\Católica\semestre 6\GDI\RegistrodeRecetaGDI7\sistemaoptico4\src\main\java\vista\VerRecetaDialog.java
