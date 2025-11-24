@@ -171,15 +171,9 @@ public class MenuPrincipal extends JFrame {
         gbc.gridx = 2;
         panel.add(crearTarjetaModerna("Oftalmologos", "Gestionar oftalmologos", "O", COLOR_SECUNDARIO), gbc);
         
-        // Fila 2
-        gbc.gridx = 0; gbc.gridy = 1;
+        gbc.gridx = 3;
         panel.add(crearTarjetaModerna("Buscar Recetas", "Buscar por paciente", "B", COLOR_ADVERTENCIA), gbc);
-        
-        gbc.gridx = 1;
-        panel.add(crearTarjetaModerna("Reportes", "Ver estadisticas", "E", COLOR_INFO), gbc);
-        
-  
-        
+    
         return panel;
     }
     
@@ -321,9 +315,6 @@ public class MenuPrincipal extends JFrame {
             case "Buscar Recetas":
                 abrirBuscarRecetas();
                 break;
-            case "Reportes":
-                abrirReportes();
-                break;
 
             default:
                 JOptionPane.showMessageDialog(this,
@@ -352,11 +343,7 @@ public class MenuPrincipal extends JFrame {
         BuscarRecetasFrame frame = new BuscarRecetasFrame(this);
         frame.setVisible(true);
     }
-    
-    private void abrirReportes() {
-        ReportesFrame frame = new ReportesFrame(this, "General");
-        frame.setVisible(true);
-    }
+
     
     private String obtenerFechaActual() {
         java.time.LocalDateTime ahora = java.time.LocalDateTime.now();

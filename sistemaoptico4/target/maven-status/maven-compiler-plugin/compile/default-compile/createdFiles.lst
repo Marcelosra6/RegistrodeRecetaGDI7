@@ -43,7 +43,6 @@ util\ConexionDB.class
 vista\BuscarRecetasFrame$AlternatingRowRenderer.class
 vista\VerRecetaDialog$1.class
 vista\LoginFrame$3.class
-vista\ReportesFrame.class
 dao\UsuarioDAO.class
 vista\GestionRecetasFrame.class
 vista\GestionPacientesFrame.class

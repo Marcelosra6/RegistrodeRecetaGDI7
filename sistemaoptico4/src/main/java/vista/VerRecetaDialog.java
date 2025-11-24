@@ -347,7 +347,7 @@ public class VerRecetaDialog extends JDialog {
         return btn;
     }
 
-    private void imprimir() {
+     private void imprimir() {
         PrinterJob job = PrinterJob.getPrinterJob();
         job.setJobName("Receta " + datos.getReceta().getIdReceta());
 
@@ -355,8 +355,32 @@ public class VerRecetaDialog extends JDialog {
             if (pageIndex > 0) return Printable.NO_SUCH_PAGE;
 
             Graphics2D g2 = (Graphics2D) graphics;
+            g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            
+            // Obtener dimensiones
+            double pageWidth = pageFormat.getImageableWidth();
+            double pageHeight = pageFormat.getImageableHeight();
+            
+            int panelWidth = panelContenido.getWidth();
+            int panelHeight = panelContenido.getHeight();
+            
+            // Calcular escala para ajustar al ancho de la página
+            double scaleX = pageWidth / panelWidth;
+            double scaleY = pageHeight / panelHeight;
+            double scale = Math.min(scaleX, scaleY);
+            
+            // Si el contenido es más alto que la página, ajustar solo al ancho
+            if (scale < 1.0 && scaleY < scaleX) {
+                scale = scaleX;
+            }
+            
+            // Aplicar transformaciones
             g2.translate(pageFormat.getImageableX(), pageFormat.getImageableY());
-            panelContenido.printAll(g2);
+            g2.scale(scale, scale);
+            
+            // Renderizar el panel
+            panelContenido.print(g2);
+            
             return Printable.PAGE_EXISTS;
         });
 
